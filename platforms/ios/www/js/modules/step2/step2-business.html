@@ -1,0 +1,113 @@
+<ion-view view-title="Business Information">
+  <ion-content class="has-header">
+    <form name="businessForm" novalidate>
+      <div class="list">
+        <div class="item item-divider">
+          Business Details
+        </div>
+        <label class="item item-input item-stacked-label" ng-class="{ 'has-errors' : businessForm.position.$touched && businessForm.position.$invalid, 'no-errors' : businessForm.position.$touched && businessForm.position.$valid }">
+          <span class="input-label">Position</span>
+          <input
+            type="text"
+            name="position"
+            placeholder="President"
+            ng-model="vm.model.employment.position"
+            required />
+        </label>
+        <div class="error-container" ng-messages="businessForm.position.$error" ng-if="businessForm.position.$touched">
+          <div ng-repeat="errorMessage in vm.errorMessages">
+            <div class="error padding" ng-message-exp="errorMessage.type">
+              <i class="ion-ios-information-outline"></i>
+              {{ errorMessage.text }}
+            </div>
+          </div>
+        </div>
+        <div class="item item-divider">
+          Company Details
+        </div>
+        <label class="item item-input item-stacked-label" ng-class="{ 'has-errors' : businessForm.company.$touched && businessForm.company.$invalid, 'no-errors' : businessForm.company.$touched && businessForm.company.$valid }">
+          <span class="input-label">Company Name</span>
+          <input
+            type="text"
+            name="company"
+            placeholder="Apple, Inc."
+            ng-model="vm.model.company.name"
+            required />
+        </label>
+        <div class="error-container" ng-messages="businessForm.company.$error" ng-if="businessForm.company.$touched">
+          <div ng-repeat="errorMessage in vm.errorMessages">
+            <div class="error padding" ng-message-exp="errorMessage.type">
+              <i class="ion-ios-information-outline"></i>
+              {{ errorMessage.text }}
+            </div>
+          </div>
+        </div>
+        <label class="item item-input item-stacked-label" ng-class="{ 'has-errors' : businessForm.industry.$touched && businessForm.industry.$invalid, 'no-errors' : businessForm.industry.$touched && businessForm.industry.$valid }">
+          <span class="input-label">Company Industry</span>
+          <input
+            type="text"
+            name="industry"
+            class="ion-autocomplete"
+            placeholder="Information Technology"
+            readonly="readonly"
+            autocomplete="off"
+            ng-model="vm.model.company.industry"
+            ion-autocomplete
+            item-value-key="text"
+            item-view-value-key="text"
+            items-method="vm.getIndustries(query)"
+            items-clicked-method="vm.industryClicked(callback)"
+            items-removed-method="vm.industryRemoved(callback)"
+            select-items-label="Select company industry..."
+            selected-items-label="Selected company industry:"
+            max-selected-items="1"
+            required />
+        </label>
+        <div class="error-container" ng-messages="businessForm.industry.$error" ng-if="businessForm.industry.$touched">
+          <div ng-repeat="errorMessage in vm.errorMessages">
+            <div class="error padding" ng-message-exp="errorMessage.type">
+              <i class="ion-ios-information-outline"></i>
+              {{ errorMessage.text }}
+            </div>
+          </div>
+        </div>
+        <label class="item item-input item-stacked-label" ng-class="{ 'has-errors' : businessForm.startDate.$touched && businessForm.startDate.$invalid, 'no-errors' : businessForm.startDate.$touched && businessForm.startDate.$valid }">
+          <span class="input-label">Date Started</span>
+          <input
+            type="month"
+            name="startDate"
+            max="{{vm.maxMonth}}"
+            ng-model="vm.model.company.startDate"
+            required />
+        </label>
+        <div class="error-container" ng-messages="businessForm.startDate.$error" ng-if="businessForm.startDate.$touched">
+          <div ng-repeat="errorMessage in vm.errorMessages">
+            <div class="error padding" ng-message-exp="errorMessage.type">
+              <i class="ion-ios-information-outline"></i>
+              {{ errorMessage.text }}
+            </div>
+          </div>
+        </div>
+        <div class="item item-divider">
+          Registered To
+        </div>
+        <ion-radio
+          name="registrar"
+          ng-repeat="item in vm.registrars"
+          ng-value="item.value"
+          ng-model="vm.model.company.registrar"
+          required>
+          {{ item.text }}
+        </ion-radio>
+         <div class="error-container" ng-messages="businessForm.registrar.$error">
+          <div ng-repeat="errorMessage in vm.errorMessages">
+            <div class="error padding" ng-message-exp="errorMessage.type">
+              <i class="ion-ios-information-outline"></i>
+              {{ errorMessage.text }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>

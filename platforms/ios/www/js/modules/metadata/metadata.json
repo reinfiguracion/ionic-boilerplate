@@ -1,0 +1,205 @@
+{
+  "errorMessages": [
+    {
+      "type": "email",
+      "text": "Please enter a valid value."
+    },
+    {
+      "type": "number",
+      "text": "Please enter a valid value."
+    },
+    {
+      "type": "month",
+      "text": "Please enter a valid value."
+    },
+    {
+      "type": "pattern",
+      "text": "Please enter a valid value."
+    },
+    {
+      "type": "required",
+      "text": "This field is required."
+    },
+    {
+      "type": "max",
+      "text": "Please enter a valid value."
+    }
+  ],
+  "incomeSources": [
+    {
+      "text": "Local Employment",
+      "value": "Local Employment"
+    },
+    {
+      "text": "Business",
+      "value": "Business"
+    },
+    {
+      "text": "OFW (Land-based)",
+      "value": "Overseas Employment (Land-based)"
+    },
+    {
+      "text": "OFW (Sea-based)",
+      "value": "Overseas Employment (Sea-based)"
+    },
+    {
+      "text": "Freelance / Home-based",
+      "value": "Freelance / Home-based Work"
+    },
+    {
+      "text": "Commission",
+      "value": "Commission"
+    },
+    {
+      "text": "Allotment",
+      "value": "Allotment"
+    },
+    {
+      "text": "Allowance",
+      "value": "Allowance"
+    },
+    {
+      "text": "Pension",
+      "value": "Pension"
+    },
+    {
+      "text": "Remittance",
+      "value": "Remittance"
+    }
+  ],
+  "employment":{
+    "locations": [
+      "Abroad",
+      "Philippines"
+    ],
+    "statuses":[
+      "Regular",
+      "Probationary",
+      "Contractual",
+      "Project-based Hire"
+    ],
+    "positions":[
+      "Government Employee",
+      "Government Official",
+      "Police Officer",
+      "OFW",
+      "Security Guard",
+      "Real Estate Agent",
+      "Insurance Agent",
+      "Talent Agent",
+      "Coast Guard",
+      "Miner (non-office based)",
+      "Farmer",
+      "Call Center Agent / BPO Employee",
+      "Media / Entertainment Staff",
+      "Military Officer",
+      "Factory Worker",
+      "Machine Operator"
+    ]
+  },
+  "company": {
+    "industries":[
+      {"text": "Accounting Services"},
+      {"text": "Audit Services"},
+      {"text": "Tax Services"},
+      {"text": "Advertising Services"},
+      {"text": "Public Relations Services"},
+      {"text": "Marketing Services"},
+      {"text": "Agriculture"},
+      {"text": "Forestry"},
+      {"text": "Fishing"},
+      {"text": "Animal"},
+      {"text": "Livestock"},
+      {"text": "Poultry Production"},
+      {"text": "Architecture"},
+      {"text": "Building"},
+      {"text": "Construction"},
+      {"text": "Athletics"},
+      {"text": "Sports"},
+      {"text": "Banking Services"},
+      {"text": "Financial Services"},
+      {"text": "Charity  Services"},
+      {"text": "Social Services"},
+      {"text": "Non-Profit Organisation"},
+      {"text": "Call Center"},
+      {"text": "Contact Center"},
+      {"text": "BPO"},
+      {"text": "Design"},
+      {"text": "Education"},
+      {"text": "Energy"},
+      {"text": "Power"},
+      {"text": "Water"},
+      {"text": "Oil"},
+      {"text": "Gas"},
+      {"text": "Waste Management"},
+      {"text": "Engineering - Building"},
+      {"text": "Engineering - Civil"},
+      {"text": "Engineering - Construction"},
+      {"text": "Engineering - Quantity Survey"},
+      {"text": "Engineering - Others"},
+      {"text": "Entertainment"},
+      {"text": "Recreation"},
+      {"text": "Export"},
+      {"text": "FMCG"},
+      {"text": "Food and Catering Services"},
+      {"text": "Freight Forwarding"},
+      {"text": "Delivery"},
+      {"text": "Shipping"},
+      {"text": "General Business Services"},
+      {"text": "General Engineering Services"},
+      {"text": "Health Services & Beauty Care"},
+      {"text": "Hospitality Services"},
+      {"text": "Hotel Services"},
+      {"text": "Information Technology"},
+      {"text": "Insurance"},
+      {"text": "Pension Funding"},
+      {"text": "Legal Services"},
+      {"text": "Life Sciences"},
+      {"text": "Manpower"},
+      {"text": "Personal Recruitment"},
+      {"text": "Manufacturing"},
+      {"text": "Insurance"},
+      {"text": "Mass Transportation (Land, Air, Sea)"},
+      {"text": "Media"},
+      {"text": "Publishing"},
+      {"text": "Printing"},
+      {"text": "Medical"},
+      {"text": "Pharmaceutical"},
+      {"text": "Mining and Quarrying"},
+      {"text": "Photography"},
+      {"text": "Videography"},
+      {"text": "Arts"},
+      {"text": "Property Management"},
+      {"text": "Consultancy"},
+      {"text": "Security Services"},
+      {"text": "Protection Services"},
+      {"text": "Telecommunication"},
+      {"text": "Tourism"},
+      {"text": "Travel Agency"},
+      {"text": "Trading and Distribution"},
+      {"text": "Others"}
+    ],
+    "registrars": [
+      {
+        "text": "SEC",
+        "value": "Security Exchange Commission"
+      },
+      {
+        "text": "DTI",
+        "value": "Department of Trade and Industry"
+      },
+      {
+        "text": "None",
+        "value": "None"
+      }
+    ]
+  },
+  "loan":{
+    "types":[
+      "Business",
+      "Home",
+      "Personal",
+      "Vehicle"
+    ]
+  }
+}
